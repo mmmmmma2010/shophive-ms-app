@@ -1,0 +1,18 @@
+services:
+  user-service:
+    deploy:
+      replicas: 1  
+  product-service:
+    deploy:
+      replicas: 1  
+  order-service:
+    deploy:
+      replicas: 1  
+  payment-service:
+    deploy:
+      replicas: 1  
+  notification-service:
+    deploy:
+      replicas: 1  
+
+   
