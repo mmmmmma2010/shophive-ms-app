@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from payments.views import initiate_payment
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/v1/payments/initiate/', initiate_payment, name='initiate_payment'),
 ]
